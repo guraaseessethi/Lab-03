@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 03 Form</title>
+    <style>
+        strong {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Contact Form</h1>
+            <p>Lab 03</p>
+        </header>
+
+        <form action="./thanks.html" netlify method="post">
+            <fieldset>
+                <legend>User Information</legend>
+                <div>
+                    <label for="firstName">First Name:<strong>*</strong></label><br>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name:<strong>*</strong></label><br>
+                    <input type="text" name="lastName" id="lastName" required>
+                </div>
+
+                <div>
+                    <label for="eMail">E-mail:<strong>*</strong></label><br>
+                    <input type="email" name="eMail" id="eMail" required>
+                </div>
+
+                <div>
+                    <label for="phone">Phone:</label><br>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+
+                <div>
+                    <label for="query">Query</label><br>
+                    <select name="query" id="query">
+                        <option value="select">Select your Query</option>
+                        <option value="careerOpportunity">Career Opportunity</option>
+                        <option value="businessProposal">Business Proposal</option>
+                        <option value="generalQuery">General Query</option>
+                        <option value="complaint">Complaint</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="message">Message:<strong>*</strong></label><br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        required placeholder="Please type your message here!"></textarea>
+                </div>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+        </form>
+    </main>
+</body>
+
+</html>
